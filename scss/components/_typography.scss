@@ -1,12 +1,15 @@
 //Typography
 
 .headline--primary {
-font-size: em(32px);
-font-weight: $font-bold;
-color: $col-primary;
+font-size: em(48px);
+font-weight: $font-black;
+color: black;
 line-height: 1.2;
 margin: 1em 1em 1em 1em;
 font-family: $font-serif;
+&__thin{
+	font-weight: $font-thin;
+}
 
 }
 

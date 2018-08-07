@@ -39,7 +39,7 @@ button[class^='btn'] {
 		background-color: $col--12;
 	}
 	&.grid__col--8{
-		border: solid 2px $col--8;
+		border-bottom: solid 2px $col-font-dark;
 	}
 	&.grid__col--7{
 		
