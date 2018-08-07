@@ -60,3 +60,16 @@
   
     }
   }
+
+  .row{
+    @include flex(row, center);
+  }
+
+   .row > ul{
+    @include flex(row, center);
+    margin: 0 auto;
+  }
+
+  ul li {
+    margin-right: 1em;
+  }

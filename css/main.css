@@ -400,6 +400,22 @@ template {
       [class^="grid__col--"] + [class^="grid__col--"] {
         margin-left: 2%; } }
 
+.row {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center; }
+
+.row > ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto; }
+
+ul li {
+  margin-right: 1em; }
+
 .form {
   text-alight: left; }
   .form__input {
