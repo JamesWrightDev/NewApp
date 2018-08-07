@@ -1,0 +1,66 @@
+//Typography
+
+.headline--primary {
+font-size: em(32px);
+font-weight: $font-bold;
+color: $col-primary;
+line-height: 1.2;
+margin: 1em 1em 1em 1em;
+font-family: $font-serif;
+
+}
+
+.headline--secondary {
+	font-size: em(18px);
+	font-weight: $font-thin;
+	margin: 1em 0;
+	font-family: $font-serif;
+	color: $col-font;
+
+}
+
+.article--title{
+	font-family: $font-serif;
+	font-weight: $font-regular;
+	color: $col-font-dark;
+	padding: 0 1em;
+	font-size: 19px;
+}
+
+.blockquote {
+	font-family: $font-serif;
+	font-size: em(24px);
+	font-style: italic;
+	line-height: 1.4;
+	font-weight: $font-regular;
+	border-left: solid 10px $col-primary;
+	border-radius: 5px;
+	padding-left: 20px;
+	margin: 1em 0;
+	color: $col-font;
+}
+
+//Hide deault Form Labels
+.form__label{
+
+	&--hidden{
+		display: none;
+	}
+}
+
+//Font styles for nav items
+.nav__item {
+	color: $col-font;
+	font-weight: $font-thin;
+	a{
+		color: $col-font-dark;
+		font-weight: $font-thin;
+		text-decoration: none;
+	}
+	&:hover{
+		a {
+			color: $col-white;
+		}
+	}
+
+}
