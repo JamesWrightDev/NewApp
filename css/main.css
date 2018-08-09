@@ -429,6 +429,8 @@ ul li {
 .theme__colors {
   border: none;
   padding: 15px 0px; }
+  .theme__colors:hover {
+    cursor: pointer; }
 
 button[class^='btn'] {
   width: 100%;
@@ -519,6 +521,8 @@ button[class^='btn'] {
       padding: 10px 20px;
       color: #fff;
       background-color: #58e1c1; }
+      .nav__item:hover:hover {
+        cursor: pointer; }
 
 .headline--primary {
   font-size: 3em;
