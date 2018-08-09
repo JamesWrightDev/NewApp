@@ -15,7 +15,7 @@ buttons.addEventListener('click', function(e) {
     let query = null;
 
     if (e.target.tagName == 'BUTTON') {
-        if (e.target.innerHTML == 'World') {
+        if (e.target.innerHTML == 'World News') {
             query = 'q=world&'
             console.log(e.target)
         } else if (e.target.innerHTML == 'Movies') {
@@ -39,7 +39,7 @@ buttons.addEventListener('click', function(e) {
 
     console.log(url)
 
-    // beginFetch(url)
+    beginFetch(url)
 
 
 })
@@ -73,12 +73,11 @@ const beginFetch = (a) => {
 
 
                 //Create Rows
-                option = articleContainer.appendChild(document.createElement("div"));
-                option.className = "grid__row";
+
 
                 //Create Columns
-                col = option.appendChild(document.createElement('div'));
-                col.className = "grid__col--7 theme__colors centered"
+                col = articleContainer.appendChild(document.createElement('div'));
+                col.className = "col-lg-9 text-center"
 
                 //Create Headline 
                 headline = col.appendChild(document.createElement('h4'));
@@ -96,4 +95,10 @@ const beginFetch = (a) => {
         });
 }
 
-// beginFetch(url);
+beginFetch(url);
+
+
+
+
+
+
