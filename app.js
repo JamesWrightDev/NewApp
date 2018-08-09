@@ -77,17 +77,26 @@ const beginFetch = (a) => {
 
                 //Create Columns
                 col = articleContainer.appendChild(document.createElement('div'));
-                col.className = "col-lg-9 text-center"
+                col.className = "row top--buffer"
+
+                  //Create Image
+                image_container = col.appendChild(document.createElement('div'));
+                image_container.className = 'col-lg-2 article--image';
+                image_container.style.backgroundImage = `url('${articleImgURL}')`;
+
+                // image = image_container.appendChild(document.createElement('img'));
+                // image.className = "article--image";
+                // image.src = articleImgURL;
 
                 //Create Headline 
-                headline = col.appendChild(document.createElement('h4'));
-                headline.className = "article--title";
+                headline_container = col.appendChild(document.createElement('div'));
+                headline_container.className = 'col-lg-8 article--title'
+
+                headline = headline_container.appendChild(document.createElement('h4'));
+                headline.className = "";
                 headline.textContent = articleTitle;
 
-                //Create Image
-                image = col.appendChild(document.createElement('img'));
-                image.className = "article--image";
-                image.src = articleImgURL;
+              
 
                 console.log('Fetch Run with URL' + url)
 
